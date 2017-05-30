@@ -11,7 +11,7 @@ body {
     text-align: center;
     border-radius: 25px;
     position: fixed;
-    margin-left: 30px;
+    margin-left: 60px;
     
 }
 #titleBox {
@@ -48,8 +48,7 @@ body {
     width: 80%;
     position: fixed;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-left: 60px;
     
 }
 #search {
@@ -65,8 +64,7 @@ body {
     position: fixed;
     width: 80%;
     top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-left: 60px;
 }
 
 
@@ -97,6 +95,7 @@ body {
     text-decoration: none;
     color: #142b51;
     margin-top: 30px;
+    width: 100%;
 }
 .option:hover {
     background-color:  rgba(105, 187, 234, 0.3);
