@@ -1,12 +1,19 @@
 (function() {
     window.onload = function() {
-        joanne();
+        var $ = function(id){return document.getElementById(id);}
+
+        $("nearMe").onclick = function() {
+            alert("ho");
+        }
+        $("nearMe").addEventListener("tap", nearMe);
+        // joanne();
+    }
+    function nearMe() {
+        alert("tap");
     }
 
     function joanne() {
         var personalityToggle = false;
-        var $ = function(id){return document.getElementById(id);}
-        console.log($("personality"));
         $("personality").addEventListener('click', personality);
         $("personality").addEventListener('touchstart', personality);
         var needsToggle = false;

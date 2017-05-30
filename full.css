@@ -2,6 +2,9 @@ body {
     background-image: url("background.png");
     font-family: 'Raleway', sans-serif;
 }
+.hidden {
+    visibility: hidden;
+}
 
 #header {
     background-color: rgba(105, 187, 234, 0.3);
@@ -18,14 +21,14 @@ body {
     text-align: left;
 }
 #title {
-    font-weight: 400;
     display: inline;
     font-size: 20px;
+    padding: 20px;
 }
 #time {
     display: inline;
     padding: 20px;
-    font-weight: 400;
+    font-size: 80px;
     margin-top: 20px;
 }
 #timeStamp {
@@ -39,9 +42,8 @@ body {
 
 #searchImg {
     float: left;
-    margin-left: 30px;
-    width: 30px;
     margin-top: 30px;
+    width: 30px;
 }
 #searchBar {
     display: flex;
@@ -49,6 +51,7 @@ body {
     position: fixed;
     bottom: 20px;
     margin-left: 60px;
+    height: 80px;
     
 }
 #search {
@@ -75,7 +78,7 @@ body {
 
 /* THIS IS FOR THE DASHBOARD */
 
-#options {
+#dashboard {
     height: 100%;
     display: flex;
     display: -webkit-flex;
@@ -98,4 +101,5 @@ body {
     color: #142b51;
     margin-top: 30px;
 }
+
 
