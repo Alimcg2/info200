@@ -3,7 +3,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 .hidden {
-    visibility: hidden;
+   display: none;
 }
 
 #header {
@@ -37,9 +37,6 @@ body {
 }
 
 
-
-
-
 #searchImg {
     float: left;
     margin-top: 30px;
@@ -61,9 +58,7 @@ body {
 }
 
 
-
-
-#main {
+.main {
     position: fixed;
     width: 80%;
     top: 150px;

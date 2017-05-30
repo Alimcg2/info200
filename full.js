@@ -1,15 +1,13 @@
 (function() {
+    var $ = function(id){return document.getElementById(id);}
     window.onload = function() {
-        var $ = function(id){return document.getElementById(id);}
-
-        $("nearMe").onclick = function() {
-            alert("ho");
-        }
-        $("nearMe").addEventListener("tap", nearMe);
+        $("nearMe").onclick = nearMe;
         // joanne();
     }
     function nearMe() {
-        alert("tap");
+        $("dashMain").classList.add("hidden");
+        $("mapMain").classList.remove("hidden");
+        $("back").classList.remove("hidden");
     }
 
     function joanne() {
