@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="full.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200i,400,800" rel="stylesheet">
+  </head>
+  <body>
+
+    
+    
+    <div id="header">
+      
+      <div id="titleBox">
+        <p id="title">Dashboard</p>
+      </div>
+      <p id="time">12:37</p>
+      <p id="timeStamp">pm</p>
+    </div>
+
+    
+    <div id="main">
+      <div id="options">
+        <a href="nearMe.html" class="option">Residents Near Me</a>
+        <a href="calendar.html" class="option">Calendar</a>
+        <a href="messaging.html" class="option">Message</a>
+        <a href="allResidents.html" class="option">All Residents</a>
+        <a href="helpQueue.html" class="option">My Queue</a>
+        <a href="dashboard.html" class="option">Settings</a>
+      </div>
+
+      
+    </div>
+
+
+
+    <div id="searchBar">
+      <img src="search.svg" id="searchImg" alt="search">
+      <input class="option" id="search" type="text" value="Search">
+    </div>
+  </body>
+</html>

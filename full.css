@@ -1,0 +1,104 @@
+body {
+    background-image: url("background.png");
+    font-family: 'Raleway', sans-serif;
+}
+
+#header {
+    background-color: rgba(105, 187, 234, 0.3);
+    width: 80%;
+    margin: auto;
+    height: 130px;
+    text-align: center;
+    border-radius: 25px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+#titleBox {
+    text-align: left;
+}
+#title {
+    font-weight: 400;
+    display: inline;
+    font-size: 20px;
+}
+#time {
+    display: inline;
+    padding: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#timeStamp {
+    display: inline;
+    font-weight: 400;
+}
+
+
+
+
+
+#searchImg {
+    float: left;
+    margin-left: 30px;
+    width: 30px;
+    margin-top: 30px;
+}
+#searchBar {
+    display: flex;
+    width: 80%;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+#search {
+    float: right;
+    margin-left: 60px;
+    width: 80%;
+}
+
+
+
+
+#main {
+    position: fixed;
+    width: 80%;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+#options {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#login p {
+    margin-right: 20%;
+}
+.option {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    background: white;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    text-decoration: none;
+    color: #142b51;
+    margin-top: 30px;
+}
+.option:hover {
+    background-color:  rgba(105, 187, 234, 0.3);
+}
