@@ -2,13 +2,35 @@
     var $ = function(id){return document.getElementById(id);}
     window.onload = function() {
         $("nearMe").onclick = nearMe;
+        $("backImg").onclick = backToDash;
+        $("calendar").onclick = calendar;
+        $("messaging").onclick = messaging;
         // joanne();
     }
     function nearMe() {
         $("dashMain").classList.add("hidden");
         $("mapMain").classList.remove("hidden");
-        $("back").classList.remove("hidden");
+        $("backImg").classList.remove("hidden");
     }
+    function calendar() {
+        $("dashMain").classList.add("hidden");
+        $("calMain").classList.remove("hidden");
+        $("backImg").classList.remove("hidden");
+    }
+    function messaging() {
+        $("dashMain").classList.add("hidden");
+        $("messageMain").classList.remove("hidden");
+        $("backImg").classList.remove("hidden");
+    }
+    
+    function backToDash() {
+        $("dashMain").classList.remove("hidden");
+        $("mapMain").classList.add("hidden");
+        $("backImg").classList.add("hidden");
+        $("calMain").classList.add("hidden");
+        $("messageMain").classList.add("hidden");
+    }
+        
 
     function joanne() {
         var personalityToggle = false;

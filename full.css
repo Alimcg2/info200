@@ -1,6 +1,7 @@
 body {
     background-image: url("background.png");
     font-family: 'Raleway', sans-serif;
+    font-size: 27px;
 }
 .hidden {
    display: none;
@@ -38,9 +39,10 @@ body {
 
 
 #searchImg {
-    float: left;
+    float: right;
     margin-top: 30px;
     width: 30px;
+    margin-left: 20px;
 }
 #searchBar {
     display: flex;
@@ -52,9 +54,8 @@ body {
     
 }
 #search {
-    float: right;
-    margin-left: 60px;
-    width: 80%;
+    margin-left: 50px;
+    width: 75%;
 }
 
 
@@ -64,10 +65,13 @@ body {
     top: 150px;
     margin-left: 60px;
     bottom: 100px;
+    overflow: scroll;
 }
 
-
-
+#backImg {
+    margin-top: 20px;
+    width: 60px;
+}
 
 
 
@@ -97,4 +101,22 @@ body {
     margin-top: 30px;
 }
 
+
+/* THIS IS FOR THE MESSAGING */
+.message {
+    background-color:  rgba(198, 198, 198, 0.3);
+    padding: 10px;
+    margin-top: 20px;
+}
+.message .time {
+    float: right;
+    margin-top: 0px;
+   
+}
+.message p,  h4{
+    padding: 10px;
+}
+h4 {
+    background-color: rgba(255, 255, 255, 0.3);
+}
 

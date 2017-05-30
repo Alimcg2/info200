@@ -46,12 +46,12 @@ a {
     padding: 10px;
     margin-top: 20px;
 }
-.time {
+.message .time {
     float: right;
     margin-top: 0px;
    
 }
-p,  h4{
+.message p,  h4{
     padding: 10px;
 }
 h4 {
