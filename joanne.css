@@ -1,0 +1,133 @@
+body {
+    background-image: url("background.png");
+    font-family: 'Raleway', sans-serif;
+}
+
+#header {
+    background-color: rgba(105, 187, 234, 0.3);
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    text-align: center;
+    border-radius: 25px;
+    position: fixed;
+    top: 90px;
+    
+}
+#title {
+    text-align: left;
+}
+h1 {
+    font-weight: 400;
+    display: inline;
+    font-size: 60px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -250px;
+}
+h2 {
+    display: inline;
+    padding: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+h3 {
+    display: inline;
+    font-weight: 400;
+}
+#main {
+    position: fixed;
+    width: 80%;
+    height: 440px;
+    overflow: scroll;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    text-decoration: none;
+}
+
+#joanneImg {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-right: 30px;
+    float: right;
+    border-radius: 50%;
+}
+#joanneImg img {
+    width: 90px;
+    margin-top: 5px;
+}
+.item{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    margin-top: 30px;
+    color: #142b51;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+}
+.item:hover {
+    background-color:  rgba(105, 187, 234, 0.3);
+}
+#backImg {
+    float: left;
+    width: 50px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+#searchBar {
+    display: flex;
+    position: fixed;
+    bottom: 30px;
+    width: 80%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    height: 80px;
+}
+
+.info {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    overflow: scroll;
+    padding: 10px;
+    background-color:  rgba(198, 198, 198, 0.3);
+}
+.answer {
+    margin-left: 20px;
+    font-style: italic;
+}
+.title {
+    font-weight: 800;
+}
+
+.hidden {
+    display: none;
+}
+#extraspace {
+    height: 100px;
+}
+#map-hidden {
+    height: 300px;
+}
+
+.dots {
+    width: 30px;
+    float: right;
+    margin-right: 30px;
+}
+
+#edit {
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 90%;
+    position: absolute;
+}

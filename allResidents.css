@@ -1,0 +1,111 @@
+body {
+    background-image: url("background.png");
+    font-family: 'Raleway', sans-serif;
+}
+
+#header {
+    background-color: rgba(105, 187, 234, 0.3);
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    text-align: center;
+    border-radius: 25px;
+    position: fixed;
+    top: 90px;
+    
+}
+#title {
+    text-align: left;
+}
+h1 {
+    font-weight: 400;
+    display: inline;
+    font-size: 80px;
+}
+h2 {
+    display: inline;
+    padding: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+h3 {
+    display: inline;
+    font-weight: 400;
+}
+#main {
+    position: fixed;
+    width: 80%;
+    height: 440px;
+    overflow: scroll;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#residents {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h4 {
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 10px;
+    font-weight: 200;
+    font-style: italic;
+}
+a {
+    text-decoration: none;
+}
+.resident {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    background: white;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    text-decoration: none;
+    color: #142b51;
+    margin-top: 30px;
+}
+.resident:hover {
+    background-color:  rgba(105, 187, 234, 0.3);
+}
+
+#backImg {
+    float: left;
+    width: 50px;
+    margin-top: 30px;
+    position: absolute;
+}
+#addImg {
+    width: 50px;
+    margin-top: 30px;
+    position: absolute;
+    right: 0px;
+}
+
+#searchBar {
+    display: flex;
+    position: fixed;
+    width: 78%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    bottom: 0px;
+}
+#search {
+    display: inline;
+    float: right;
+    margin-left: 80px;
+    width: 65%;
+}
+.edit {
+    width: 25px;
+    float: right;
+}

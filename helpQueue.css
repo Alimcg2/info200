@@ -1,0 +1,122 @@
+body {
+    background-image: url("background.png");
+    font-family: 'Raleway', sans-serif;
+}
+
+#header {
+    background-color: rgba(105, 187, 234, 0.3);
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    text-align: center;
+    border-radius: 25px;
+    position: fixed;
+    top: 90px;
+    
+}
+#title {
+    text-align: left;
+}
+h1 {
+    font-weight: 400;
+    display: inline;
+    font-size: 80px;
+}
+h2 {
+    display: inline;
+    padding: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+h3 {
+    display: inline;
+    font-weight: 400;
+}
+#main {
+    position: fixed;
+    width: 80%;
+    height: 440px;
+    overflow: scroll;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#residents {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+a {
+    text-decoration: none;
+}
+.resident, .map, .queueTime {
+    font-family: 'Raleway', sans-serif;
+    background: white;
+    text-align: left;
+    text-decoration: none;
+    color: #142b51;
+    padding: 10px;
+}
+.resident {
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 21px;
+
+}
+.map, .queueTime {
+    display: inline;
+    margin-left: 30px;
+    position: absolute;
+}
+.queueTime {
+    margin-left: 200px;
+}
+.resident:hover {
+    background-color:  rgba(105, 187, 234, 0.3);
+}
+.queue img {
+    width: 100px;
+}
+.queue {
+    margin-top: 10px;
+    background-color:  rgba(198, 198, 198, 0.3);
+    padding: 10px;
+}
+#joanneMap {
+    margin-top: 15px;
+}
+
+#backImg {
+    float: left;
+    width: 50px;
+    margin-top: 30px;
+    position: absolute;
+}
+#addImg {
+    width: 50px;
+    margin-top: 30px;
+    position: absolute;
+    right: 0px;
+}
+
+#searchBar {
+    display: flex;
+    position: fixed;
+    width: 78%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    bottom: 0px;
+}
+#search {
+    display: inline;
+    float: right;
+    margin-left: 80px;
+    width: 65%;
+    border: none;
+}

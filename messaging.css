@@ -1,0 +1,68 @@
+body {
+    background-image: url("background.png");
+    font-family: 'Raleway', sans-serif;
+}
+
+#header {
+    background-color: rgba(105, 187, 234, 0.3);
+    width: 80%;
+    margin: auto;
+    height: 150px;
+    text-align: center;
+    border-radius: 25px;
+    
+}
+#title {
+    text-align: left;
+}
+h1 {
+    font-weight: 400;
+    display: inline;
+    font-size: 80px;
+}
+h2 {
+    display: inline;
+    padding: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+h3 {
+    display: inline;
+    font-weight: 400;
+}
+#options {
+    margin: auto;
+    width: 80%;
+    overflow: scroll;
+    height: 500px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.message {
+    background-color:  rgba(198, 198, 198, 0.3);
+    padding: 10px;
+    margin-top: 20px;
+}
+.time {
+    float: right;
+    margin-top: 0px;
+   
+}
+p,  h4{
+    padding: 10px;
+}
+h4 {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#backImg {
+    width: 60px;
+}
+#back {
+    bottom: 30px;
+    left: 10%;
+    position: absolute;
+}
