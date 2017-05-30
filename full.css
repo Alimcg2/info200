@@ -77,9 +77,13 @@ body {
 
 #options {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
 }
 
 
