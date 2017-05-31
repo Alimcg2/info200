@@ -21,12 +21,12 @@
     
     <div id="dashMain" class="main">
       <div id="dashboard">
-        <p id="nearMe" class="option">Residents Near Me</p>
-        <p id="calendar" class="option">Calendar</p>
-        <p id="messaging" class="option">Message</p>
-        <p id="allResidents" class="option">All Residents</p>
-        <p id="helpQueue" class="option">My Queue</p>
-        <p id="settings" class="option">Settings</p>
+        <p id="nearMe" class="option">Residents Near Me<img src="marker.svg" class="icon"></p>
+        <p id="calendar" class="option">Calendar<img src="calendar.svg" class="icon"></p>
+        <p id="messaging" class="option">Message<img src="message.svg" class="icon"></p>
+        <p id="allResidents" class="option">All Residents<img src="contacts.svg" class="icon"></p>
+        <p id="helpQueue" class="option">My Queue<img src="timer.svg" class="icon"></p>
+        <p id="settings" class="option">Settings<img src="settings.svg" class="icon"></p>
       </div>
     </div>
     
@@ -60,6 +60,7 @@
         <h4>Walter Scott</h4><p class="time">4:35pm</p>
         <p>Thanks! See you Monday.</p>
       </div>
+    <div id="newMess"><img src="edit.svg"></div>
     </div>
 
 
@@ -85,7 +86,13 @@
       </div>
     </div>
 
-
+    <div id="newMessage" class="hidden">
+      <p>To:</p>
+      <input type="text">
+      <p>Message:</p>
+      <textarea rows="3" cols="40"></textarea>
+      <button class="button" id="sendMessage">Send</button>
+    </div>
     
 
     <div id="allMain" class="main hidden">

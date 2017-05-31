@@ -104,6 +104,10 @@ body {
     color: #142b51;
     margin-top: 30px;
 }
+.icon {
+    width: 40px;
+    float: right;
+}
 
 /* -----------------------------------------------------*/
 /* THIS IS FOR THE MESSAGING */
@@ -123,6 +127,27 @@ body {
 .message h4 {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+#newMess {
+    position: fixed;
+    bottom: 120px;
+}
+#newMess img {
+    width: 70px;
+}
+
+#newMessage {
+    width: 80%;
+    top: 30%;
+    margin-left: 60px;
+    position: fixed;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid lightgrey;
+}
+#newMessage p, #newMessage input, #newMessage textarea {
+    margin-left: 40px;
 }
 
 /* -----------------------------------------------------*/
@@ -190,13 +215,15 @@ h4 {
     float: right;
     margin-top: 0px;
 }
-#messageInput {
+input, textarea {
     font-size: 35px;
     padding: 5px;
+}
+#messageInput {
+    
     width: 100%;
 }
 #messageInDiv {
-    
     padding-top: 20px;
 }
 

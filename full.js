@@ -17,7 +17,15 @@
         $("findOnMap2").onclick = findJoanne;
         $("mapJoanne").onclick = findJoanne;
         $("reject").onclick = rejectHelp;
+        $("sendMessage").onclick = sendMessage;
+        $("newMess").onclick = newMessage;
         
+    }
+    function newMessage() {
+        $("newMessage").classList.remove("hidden");
+    }
+    function sendMessage() {
+        $("newMessage").classList.add("hidden");
     }
     function nearMe() {
         $("title").innerHTML = "Residents Near Me";
@@ -98,7 +106,7 @@
     }
 
     function rejectHelp() {
-        $("emergencyAlert").classList.add("hidden");
+        $("helpAlert").classList.add("hidden");
 
     }
     function getHelp() {
