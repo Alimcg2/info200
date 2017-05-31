@@ -4,7 +4,7 @@ body {
     font-size: 27px;
 }
 .hidden {
-   display: none;
+    display: none;
 }
 
 #header {
@@ -138,9 +138,13 @@ h4 {
 #residents {
     margin: auto;
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
 }
 
 .resident {
@@ -165,7 +169,9 @@ h4 {
 
 #flex {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     position: fixed;
     bottom: 100px;
 }
@@ -178,6 +184,7 @@ h4 {
 }
 .mine {
     align-self: flex-end;
+    -webkit-align-self: flex-end;
 }
 .time {
     float: right;
@@ -198,9 +205,9 @@ h4 {
     padding: 10px;
 }
 .resident {
-    padding: 15px;
+    padding: 20px;
     margin-top: 30px;
-    font-size: 21px;
+    font-size: 28px;
 
 }
 .map, .queueTime {
@@ -221,4 +228,67 @@ h4 {
     margin-top: 10px;
     background-color:  rgba(198, 198, 198, 0.3);
     padding: 10px;
+}
+
+
+
+
+/* -----------------------------------------------------*/
+/* THIS IS FOR JOANNES PAGE */
+
+
+.item{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    color: #142b51;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+.info {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    overflow: scroll;
+    padding: 10px;
+    background-color:  rgba(198, 198, 198, 0.3);
+}
+.answer {
+    margin-left: 20px;
+    font-style: italic;
+    font-size: 26px;
+}
+
+.title {
+    font-weight: 800;
+}
+
+#map-hidden {
+    height: 300px;
+}
+
+.dots {
+    width: 40px;
+    float: right;
+    margin-right: 30px;
+}
+
+#edit {
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 90%;
+    position: absolute;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 2em;
+    height: 2em;
+}
+
+#joanneImg {
+    width: 250px;
+    margin-left: 300px;
 }

@@ -8,6 +8,8 @@
         $("beth").onclick = beth;
         $("helpQueue").onclick = queue;
         $("allResidents").onclick = allResidents;
+        $("joanneQueue").onclick = joanne;
+        $("joanne").onclick = joanne;
     }
     function nearMe() {
         $("title").innerHTML = "Residents Near Me";
@@ -59,10 +61,17 @@
         $("messageMain").classList.add("hidden");
         $("allMain").classList.add("hidden");
         $("queueMain").classList.add("hidden");
+        $("joanneMain").classList.add("hidden");
     }
         
 
     function joanne() {
+        $("title").innerHTML = "All Residents";
+        $("dashMain").classList.add("hidden");
+        $("queueMain").classList.add("hidden");
+        $("allMain").classList.add("hidden");
+        $("joanneMain").classList.remove("hidden");
+        $("backImg").classList.remove("hidden");
         var personalityToggle = false;
         $("personality").addEventListener('click', personality);
         $("personality").addEventListener('touchstart', personality);
