@@ -346,9 +346,8 @@ button {
 
 .button {
     width: 60%;
-    margin  : 5px auto;
-    margin-left: 50%;
-    transform: translate( -50%);
+    margin : 5px;
+    margin-left: 200px;
     display: inline;
 }
 #accept {

@@ -15,6 +15,7 @@
         $("accept").onclick = queue;
         $("findOnMap").onclick = findJoanne;
         $("findOnMap2").onclick = findJoanne;
+        $("mapJoanne").onclick = findJoanne;
         
     }
     function nearMe() {
@@ -62,6 +63,7 @@
     }
     
     function findJoanne() {
+        $("queueMain").classList.add("hidden");
         $("bethMain").classList.add("hidden");
         $("messageMain").classList.add("hidden");
         $("helpAlert").classList.add("hidden");
