@@ -81,7 +81,7 @@
           <p class="time">10:55am</p>
           <p>Lets meet at 3pm in the dining hall.</p>
         </div>
-        <div id="messageInDiv"><input type="text" id="messageInput"></div>
+        <div id="messageInDiv"><input type="text" id="messageInput"><button id="submitMessage">Send</button></div>
       </div>
     </div>
 
@@ -200,7 +200,9 @@
         <input type="radio" name="repeat" value="no"> No<br>
         <input type="radio" name="repeat" value="other"> Other<br>
         <input class="answer" value="please specify"></input>
+        <p><button id="sendReminder">Send Reminder</button></p>
       </div>
+      
       <p class="item" id="joanneMap">Find on Map<img id="map-img" class="dots" src="dots.svg"></p>
       <div class="info hidden" id="map-hidden">
         <iframe src="https://www.google.com/maps/d/embed?mid=1lJvKrDcDH-JYvCysLe7xTsqgDjc" width="660" height="290"></iframe>
@@ -241,7 +243,7 @@
     <div id="searchBar">
       <img id="backImg" class="hidden" src="back.svg">
       <input class="option" id="search" type="text" value="Search">
-      <img src="search.svg" id="searchImg" alt="search">
+      <button id="searchImg" ><img src="search.svg"alt="search"></button>
     </div>
     
     

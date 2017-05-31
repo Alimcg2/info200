@@ -42,8 +42,13 @@ input, button {
 #searchImg {
     float: right;
     margin-top: 30px;
-    width: 30px;
+    width: 60px;
     margin-left: 20px;
+    border: none;
+    background: none;
+}
+#searchImg img {
+    width: 40px;
 }
 #searchBar {
     display: flex;
@@ -230,10 +235,16 @@ input, textarea {
     padding: 5px;
 }
 #messageInput {
-    
-    width: 100%;
+    width: 80%;
+}
+#submitMessage {
+    width: 15%;
+    padding: 5px;
+    font-size: 35px;
+    background-color: white;
 }
 #messageInDiv {
+    width: 100%;
     padding-top: 20px;
 }
 
@@ -339,10 +350,14 @@ input, textarea {
 
 input[type=radio] {
     border: 0px;
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
 }
 
+#sendReminder {
+    margin-left: 20px;
+    font-size: 30px;
+}
 #joanneImg {
     width: 265px;
     margin-left: 260px;

@@ -219,12 +219,10 @@
         function map() {
             if (mapToggle == false) {
                 $("map-hidden").classList.remove("hidden");
-                $("extraspace").classList.remove("hidden");
                 $("map-img").src = "down.svg";
                 mapToggle = true;
             } else if (mapToggle == true) {
                 $("map-hidden").classList.add("hidden");
-                $("extraspace").classList.add("hidden");
                 mapToggle = false;
                 $("map-img").src = "dots.svg";
 
