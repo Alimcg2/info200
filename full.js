@@ -16,6 +16,7 @@
         $("findOnMap").onclick = findJoanne;
         $("findOnMap2").onclick = findJoanne;
         $("mapJoanne").onclick = findJoanne;
+        $("reject").onclick = rejectHelp;
         
     }
     function nearMe() {
@@ -95,7 +96,11 @@
             doneAlert = 1;
         }
     }
-        
+
+    function rejectHelp() {
+        $("emergencyAlert").classList.add("hidden");
+
+    }
     function getHelp() {
         if (doneHelp == 0) {
             $("helpAlert").classList.remove("hidden");
