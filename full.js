@@ -27,7 +27,11 @@
         var d = new Date();
         var hour = d.getHours();
         var min = d.getMinutes();
-        $("time").innerHTML = hour + ":" + min;
+        if (min < 10) {
+            $("time").innerHTML = hour + ":0" + min;
+        } else {
+            $("time").innerHTML = hour + ":" + min;
+        }
     }
     function newMessage() {
         $("newMessage").classList.remove("hidden");
