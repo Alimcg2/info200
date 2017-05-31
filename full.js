@@ -3,6 +3,8 @@
     var doneHelp = 0;
     var doneAlert = 0;
     window.onload = function() {
+        getTime();
+        setInterval(getTime, 10000);
         $("nearMe").onclick = nearMe;
         $("backImg").onclick = backToDash;
         $("calendar").onclick = calendar;
@@ -20,6 +22,12 @@
         $("sendMessage").onclick = sendMessage;
         $("newMess").onclick = newMessage;
         
+    }
+    function getTime() {
+        var d = new Date();
+        var hour = d.getHours();
+        var min = d.getMinutes();
+        $("time").innerHTML = hour + ":" + min;
     }
     function newMessage() {
         $("newMessage").classList.remove("hidden");
@@ -118,7 +126,7 @@
     }
     
     function joanne() {
-        $("title").innerHTML = "All Residents";
+        $("title").innerHTML = "Joanne";
         $("dashMain").classList.add("hidden");
         $("queueMain").classList.add("hidden");
         $("allMain").classList.add("hidden");
