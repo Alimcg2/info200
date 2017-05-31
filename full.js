@@ -5,30 +5,60 @@
         $("backImg").onclick = backToDash;
         $("calendar").onclick = calendar;
         $("messaging").onclick = messaging;
-        // joanne();
+        $("beth").onclick = beth;
+        $("helpQueue").onclick = queue;
+        $("allResidents").onclick = allResidents;
     }
     function nearMe() {
+        $("title").innerHTML = "Residents Near Me";
         $("dashMain").classList.add("hidden");
         $("mapMain").classList.remove("hidden");
         $("backImg").classList.remove("hidden");
     }
     function calendar() {
+        $("title").innerHTML = "Calendar";
         $("dashMain").classList.add("hidden");
         $("calMain").classList.remove("hidden");
         $("backImg").classList.remove("hidden");
     }
     function messaging() {
+        $("title").innerHTML = "Messaging";
         $("dashMain").classList.add("hidden");
         $("messageMain").classList.remove("hidden");
+        $("backImg").classList.remove("hidden");
+        $("bethMain").classList.add("hidden");
+        $("backImg").onclick = backToDash;
+    }
+    function beth() {
+        $("messageMain").classList.add("hidden");
+        $("bethMain").classList.remove("hidden");
+        $("backImg").onclick = messaging;
+    }
+    
+    function allResidents() {
+        $("title").innerHTML = "All Residents";
+        $("dashMain").classList.add("hidden");
+        $("allMain").classList.remove("hidden");
+        $("backImg").classList.remove("hidden");
+    }
+        
+    function queue() {
+        console.log("hlskdj");
+        $("title").innerHTML = "Help Queue";
+        $("dashMain").classList.add("hidden");
+        $("queueMain").classList.remove("hidden");
         $("backImg").classList.remove("hidden");
     }
     
     function backToDash() {
+        $("title").innerHTML = "Dashboard";
         $("dashMain").classList.remove("hidden");
         $("mapMain").classList.add("hidden");
         $("backImg").classList.add("hidden");
         $("calMain").classList.add("hidden");
         $("messageMain").classList.add("hidden");
+        $("allMain").classList.add("hidden");
+        $("queueMain").classList.add("hidden");
     }
         
 
