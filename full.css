@@ -189,9 +189,16 @@ h4 {
 .time {
     float: right;
     margin-top: 0px;
-   
 }
-
+#messageInput {
+    font-size: 35px;
+    padding: 5px;
+    width: 100%;
+}
+#messageInDiv {
+    
+    padding-top: 20px;
+}
 
 /* -----------------------------------------------------*/
 /* THIS IS FOR THE QUEUE */
@@ -289,6 +296,66 @@ input[type=radio] {
 }
 
 #joanneImg {
-    width: 250px;
-    margin-left: 300px;
+    width: 265px;
+    margin-left: 260px;
+}
+
+
+/* -----------------------------------------------------*/
+/* THIS IS FOR THE HELP ALERT */
+
+.alert {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.alertBox {
+    width: 90%;
+    margin: auto;
+    margin-top: 40%;
+    padding: 5px;
+    height: 400px;
+    background-color: white;
+}
+
+.alertTitle {
+    font-weight: 800;
+    font-size: 60px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.alertDescr {
+    text-align: center;
+    
+}
+#emergencyBox {
+    border: 4px solid red;
+}
+
+button {
+    background-color: white;
+    font-size: 25px;
+}
+
+.button {
+    width: 60%;
+    margin  : 5px auto;
+    margin-left: 50%;
+    transform: translate( -50%);
+    display: inline;
+}
+#accept {
+    border: 2px solid green;
+    background-color: rgb(210, 224, 208);
+}
+#reject {
+    border: 2px solid red;
+    background-color: rgba(226, 188, 183, 0.7);
 }

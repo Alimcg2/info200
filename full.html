@@ -33,6 +33,11 @@
     <div id="mapMain" class="main hidden">
         <iframe id="map" src="https://www.google.com/maps/d/embed?mid=15UqEhLNG7hT_bbS5OrYSsHatqx8" width="840" height="880"></iframe>
     </div>
+
+    
+    <div id="mainJoanne" class="main hidden">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1lJvKrDcDH-JYvCysLe7xTsqgDjc" width="840" height="880"></iframe>
+    </div>
     
     <div id="calMain" class="main hidden">
       <iframe src="https://calendar.google.com/calendar/embed?src=n3vidd02c3kitahqt8rmae6iak%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="840" height="800" frameborder="0" scrolling="no"></iframe>
@@ -76,6 +81,7 @@
           <p class="time">10:55am</p>
           <p>Lets meet at 3pm in the dining hall.</p>
         </div>
+        <div id="messageInDiv"><input type="text" id="messageInput"></div>
       </div>
     </div>
 
@@ -187,7 +193,26 @@
     </div>
 
 
-      
+    <div id="helpAlert" class="alert hidden">
+      <div class="alertBox">
+        <p class="alertTitle">Alert!</p>
+        <p class="alertDescr">Joanne Needs Help</p>
+        <button id="findOnMap" class="button">Find On Map</button>
+        <button  class="button" id="accept">Accept</button>
+        <button  class="button"  id="reject">Reject</button>
+      </div>
+    </div>
+
+
+    
+    <div id="emergencyAlert" class="alert hidden">
+      <div class="alertBox" id="emergencyBox">
+        <p  class="alertTitle">!EMERGENCY!</p>
+        <p class="alertDescr">Joanne Needs Help!</p>
+        <button  id="findOnMap2" class="button">Find On Map</button>
+      </div>
+    </div>
+
     
     <div id="searchBar">
       <img id="backImg" class="hidden" src="back.svg">

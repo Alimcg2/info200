@@ -1,5 +1,7 @@
 (function() {
     var $ = function(id){return document.getElementById(id);}
+    var doneHelp = 0;
+    var doneAlert = 0;
     window.onload = function() {
         $("nearMe").onclick = nearMe;
         $("backImg").onclick = backToDash;
@@ -10,6 +12,10 @@
         $("allResidents").onclick = allResidents;
         $("joanneQueue").onclick = joanne;
         $("joanne").onclick = joanne;
+        $("accept").onclick = queue;
+        $("findOnMap").onclick = findJoanne;
+        $("findOnMap2").onclick = findJoanne;
+        
     }
     function nearMe() {
         $("title").innerHTML = "Residents Near Me";
@@ -24,12 +30,14 @@
         $("backImg").classList.remove("hidden");
     }
     function messaging() {
+        $("helpAlert").classList.add("hidden");
         $("title").innerHTML = "Messaging";
         $("dashMain").classList.add("hidden");
         $("messageMain").classList.remove("hidden");
         $("backImg").classList.remove("hidden");
         $("bethMain").classList.add("hidden");
         $("backImg").onclick = backToDash;
+        var helpAlert = setInterval(getHelp, 3000);
     }
     function beth() {
         $("messageMain").classList.add("hidden");
@@ -45,14 +53,28 @@
     }
         
     function queue() {
-        console.log("hlskdj");
+        $("messageMain").classList.add("hidden");
+        $("helpAlert").classList.add("hidden");
         $("title").innerHTML = "Help Queue";
         $("dashMain").classList.add("hidden");
         $("queueMain").classList.remove("hidden");
         $("backImg").classList.remove("hidden");
     }
     
+    function findJoanne() {
+        $("bethMain").classList.add("hidden");
+        $("messageMain").classList.add("hidden");
+        $("helpAlert").classList.add("hidden");
+        $("emergencyAlert").classList.add("hidden");
+        $("mainJoanne").classList.remove("hidden");
+        $("backImg").classList.remove("hidden");
+        $("dashMain").classList.add("hidden");
+    }
+
+    
     function backToDash() {
+        var helpAlert = setInterval(getEmergency, 3000);
+        $("helpAlert").classList.add("hidden");
         $("title").innerHTML = "Dashboard";
         $("dashMain").classList.remove("hidden");
         $("mapMain").classList.add("hidden");
@@ -62,9 +84,24 @@
         $("allMain").classList.add("hidden");
         $("queueMain").classList.add("hidden");
         $("joanneMain").classList.add("hidden");
+        $("mainJoanne").classList.add("hidden");
+    }
+
+    function getEmergency() {
+        if (doneAlert == 0) {
+            $("emergencyAlert").classList.remove("hidden");
+            doneAlert = 1;
+        }
     }
         
-
+    function getHelp() {
+        if (doneHelp == 0) {
+            $("helpAlert").classList.remove("hidden");
+            doneHelp = 1;
+        }
+        
+    }
+    
     function joanne() {
         $("title").innerHTML = "All Residents";
         $("dashMain").classList.add("hidden");
@@ -73,21 +110,16 @@
         $("joanneMain").classList.remove("hidden");
         $("backImg").classList.remove("hidden");
         var personalityToggle = false;
-        $("personality").addEventListener('click', personality);
-        $("personality").addEventListener('touchstart', personality);
+        $("personality").onclick = personality;
         var needsToggle = false;
         console.log($("needs"));
-        $("needs").addEventListener('click', needs );
-        $("needs").addEventListener('touchstart', needs );
+        $("needs").onclick = needs ;
         var medicalToggle = false;
-        $("medical").addEventListener('click', medical );
-        $("medical").addEventListener('touchstart', medical );
+        $("medical").onclick = medical;
         var reminderToggle = false;
-        $("reminder").addEventListener('click', reminder );
-        $("reminder").addEventListener('touchstart', reminder );
+        $("reminder").onclick = reminder ;
         var mapToggle = false;
-        $("joanneMap").addEventListener('click', map );
-        $("joanneMap").addEventListener('touchstart', map );                      
+        $("joanneMap").onclick = map ;                  
        function personality() {
             if (personalityToggle == false) {
                 $("personality-hidden").classList.remove("hidden");
