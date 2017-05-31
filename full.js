@@ -129,6 +129,7 @@
         if (doneAlert == 0) {
             $("emergDescr").innerHTML = "Joanne is having an emergency.";
             $("goJoanne").classList.remove("hidden");
+            $("goJoanne").classList.add("button");
             $("emergencyAlert").classList.remove("hidden");
             doneAlert = 1;
         }
