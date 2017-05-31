@@ -90,6 +90,7 @@
       <input type="text">
       <p>Message:</p>
       <textarea rows="3" cols="40"></textarea>
+      <button class="button" id="cancelMessage">Cancel</button>
       <button class="button" id="sendMessage">Send</button>
     </div>
     
@@ -115,32 +116,40 @@
 
 
     <div id="queueMain" class="main hidden">
+      <button class="button" id="emergencyQueue">Show Emergency Queue</button>
       <div class="queue">
         <p class="resident">Astrid Richards</p>
         <img src="astrid.gif">
         <p class="map">Show on Map</p>
         <p class="queueTime">Queued at: <b>12:26pm</b></p>
+        <input type="checkbox" name="done" class="check">
       </div>
       <div class="queue">
         <p class="resident">Boyd Vasquez</p>
         <img src="boyd.gif">
         <p class="map">Show on Map</p>
         <p class="queueTime">Queued at: <b>12:29pm</b></p>
+        <input type="checkbox" name="done" class="check">
       </div>
       <div class="queue">
         <p id="joanneQueue" class="resident">Joanne Pierce</p>
         <img src="joanne.gif">
         <p id="mapJoanne" class="map" id="joanneMap">Show on Map</p>
         <p class="queueTime">Queued at: <b>12:35pm</b></p>
+        <input type="checkbox" name="done" class="check">
       </div>
       <div class="queue">
         <p class="resident">Walter Richards</p>
         <img src="walter.gif">
         <p class="map">Show on Map</p>
         <p class="queueTime">Queued at: <b>12:37pm</b></p>
+        <input type="checkbox" name="done" class="check">
       </div>
     </div>
 
+
+
+    
     <div id="joanneMain" class="main hidden">
       <img id="joanneImg" src="joanne.gif">
       <p class="item" id="personality">Personality<img id="personality-img" class="dots" src="dots.svg"></p>
@@ -216,10 +225,20 @@
         <p  class="alertTitle">!EMERGENCY!</p>
         <p class="alertDescr">Joanne Needs Help!</p>
         <button  id="findOnMap2" class="button">Find On Map</button>
+        <button  id="onWay" class="button">On My Way!</button>
       </div>
     </div>
 
-    
+
+     <div id="emergencyQ" class="alert hidden">
+      <div class="alertBox">
+        <p class="alertTitle">Emergency Queue</p>
+        <p class="alertDescr" id="emergDescr">No one is in the queue!</p>
+        <button  id="goJoanne" class="button hidden">See Joanne</button>
+        <button  id="cancelQ" class="button">Cancel</button>
+      </div>
+    </div>
+
     <div id="searchBar">
       <img id="backImg" class="hidden" src="back.svg">
       <input class="option" id="search" type="text" value="Search">

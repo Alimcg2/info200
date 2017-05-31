@@ -19,9 +19,16 @@
         $("findOnMap2").onclick = findJoanne;
         $("mapJoanne").onclick = findJoanne;
         $("reject").onclick = rejectHelp;
-        $("sendMessage").onclick = sendMessage;
+        $("cancelQ").onclick = rejectHelp;
+        $("onWay").onclick = rejectHelp;
         $("newMess").onclick = newMessage;
-        
+        $("sendMessage").onclick = sendMessage;
+        $("cancelMessage").onclick = sendMessage;
+        $("emergencyQueue").onclick = showEmerg;
+        $("goJoanne").onclick = joanne;
+    }
+    function showEmerg() {
+        $("emergencyQ").classList.remove("hidden");
     }
     function getTime() {
         var d = new Date();
@@ -75,23 +82,31 @@
     }
         
     function queue() {
+        $("queueMain").classList.remove("hidden");
         $("messageMain").classList.add("hidden");
         $("helpAlert").classList.add("hidden");
         $("title").innerHTML = "Help Queue";
         $("dashMain").classList.add("hidden");
-        $("queueMain").classList.remove("hidden");
         $("backImg").classList.remove("hidden");
+        $("newMessage").classList.add("hidden");
+        $("bethMain").classList.add("hidden");
+        $("emergencyAlert").classList.add("hidden");
+        $("dashMain").classList.add("hidden");
     }
     
     function findJoanne() {
+        $("title").innerHTML = "Find Joanne";
+        $("mainJoanne").classList.remove("hidden");
+        $("calMain").classList.add("hidden");
         $("queueMain").classList.add("hidden");
         $("bethMain").classList.add("hidden");
         $("messageMain").classList.add("hidden");
         $("helpAlert").classList.add("hidden");
         $("emergencyAlert").classList.add("hidden");
-        $("mainJoanne").classList.remove("hidden");
         $("backImg").classList.remove("hidden");
         $("dashMain").classList.add("hidden");
+        $("newMessage").classList.add("hidden");
+        $("helpAlert").classList.add("hidden");
     }
 
     
@@ -112,13 +127,17 @@
 
     function getEmergency() {
         if (doneAlert == 0) {
+            $("emergDescr").innerHTML = "Joanne is having an emergency.";
+            $("goJoanne").classList.remove("hidden");
             $("emergencyAlert").classList.remove("hidden");
             doneAlert = 1;
         }
     }
 
     function rejectHelp() {
+        $("emergencyAlert").classList.add("hidden");
         $("helpAlert").classList.add("hidden");
+        $("emergencyQ").classList.add("hidden");
 
     }
     function getHelp() {
@@ -131,6 +150,7 @@
     
     function joanne() {
         $("title").innerHTML = "Joanne";
+        $("emergencyQ").classList.add("hidden");
         $("dashMain").classList.add("hidden");
         $("queueMain").classList.add("hidden");
         $("allMain").classList.add("hidden");

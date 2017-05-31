@@ -6,6 +6,10 @@ body {
 .hidden {
     display: none;
 }
+input, button {
+    font-size: 27px;
+    font-family: 'Raleway', sans-serif;
+}
 
 #header {
     background-color: rgba(105, 187, 234, 0.3);
@@ -142,9 +146,15 @@ body {
     top: 30%;
     margin-left: 60px;
     position: fixed;
-    height: 450px;
+    height: 500px;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid lightgrey;
+}
+#newMessage button {
+    margin-left: 40px;
+}
+#cancelMessage {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 #newMessage p, #newMessage input, #newMessage textarea {
     margin-left: 40px;
@@ -264,6 +274,17 @@ input, textarea {
     padding: 10px;
 }
 
+#emergencyQueue {
+    background-color:  rgba(105, 187, 234, 0.3);
+    border: none;
+}
+.check {
+    -webkit-transform: scale(4);
+    display: inline;
+    margin-left: 610px;
+    margin-top: 50px;
+    position: absolute;
+}
 
 
 
@@ -385,3 +406,4 @@ button {
     border: 2px solid red;
     background-color: rgba(226, 188, 183, 0.7);
 }
+
